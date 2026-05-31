@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary: #19a7ff;
+    --primary-dark: #0055ff;
+    --secondary: #0d1a36;
+    --danger: #ff003c;
+    --danger-light: rgba(255, 0, 60, 0.1);
+    --bg-light: #f5f9ff;
+    --card-bg: #ffffff;
+    --text-color: #1b2b4b;
+    --text-muted: #667c99;
+    
+    --grad-primary: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    --grad-light: linear-gradient(135deg, #eef4ff, #dbe9ff);
+    
+    --radius-md: 16px;
+    --radius-lg: 25px;
+    --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--grad-light);
+    overflow-x: hidden;
+    color: var(--text-color);
+    padding: 20px;
+}
+
+/* MAIN CARD CONTAINER */
+.error-container {
+    width: 95%;
+    max-width: 680px;
+    text-align: center;
+    background: var(--card-bg);
+    padding: 50px 40px;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 20px 50px rgba(13, 26, 54, 0.1);
+    border: 1px solid rgba(25, 167, 255, 0.08);
+    animation: slideUpFade 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.error-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(to right, var(--primary), var(--danger));
+}
+
+/* MONITOR SVG STYLE */
+.monitor-wrapper {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto 30px;
+    filter: drop-shadow(0 12px 24px rgba(18, 37, 67, 0.15));
+}
+
+.monitor-svg {
+    width: 100%;
+    height: auto;
+}
+
+/* SVG KEYFRAME ANIMATIONS */
+.flatline-wave path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: heartbeatFlat 5s linear infinite;
+}
+
+@keyframes heartbeatFlat {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+    45% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.blinker {
+    animation: alertBlink 1s infinite alternate;
+}
+
+@keyframes alertBlink {
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+        fill: #ff3366;
+        filter: drop-shadow(0 0 5px #ff003c);
+    }
+}
+
+/* CRITICAL DIAGNOSIS BADGE */
+.badge {
+    display: inline-block;
+    background: var(--danger-light);
+    color: var(--danger);
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* 404 TEXT */
+.error-container h1 {
+    font-size: 110px;
+    line-height: 1;
+    color: var(--secondary);
+    margin-bottom: 10px;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--secondary), #2a3c5a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -2px;
+}
+
+/* HEADING */
+.error-container h2 {
+    font-size: 30px;
+    color: var(--secondary);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+/* DESCRIPTION */
+.error-container p {
+    color: var(--text-muted);
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* SEARCH BOX */
+.search-box {
+    position: relative;
+    max-width: 480px;
+    margin: 0 auto 30px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #e2edf7;
+    background: var(--bg-light);
+    border-radius: 12px;
+    padding: 4px 6px;
+    transition: var(--transition);
+}
+
+.search-box:focus-within {
+    border-color: var(--primary);
+    background: white;
+    box-shadow: 0 8px 20px rgba(25, 167, 255, 0.1);
+}
+
+.search-icon {
+    font-size: 16px;
+    color: var(--text-muted);
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px 5px;
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.search-btn {
+    background: var(--grad-primary);
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.search-btn:hover {
+    box-shadow: 0 5px 15px rgba(25, 167, 255, 0.3);
+}
+
+/* ACTION BUTTONS */
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.home-btn, .support-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.home-btn {
+    background: var(--grad-primary);
+    color: white;
+    box-shadow: 0 10px 20px rgba(25, 167, 255, 0.2);
+}
+
+.home-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(25, 167, 255, 0.35);
+}
+
+.support-btn {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background: transparent;
+}
+
+.support-btn:hover {
+    background: rgba(25, 167, 255, 0.05);
+    transform: translateY(-3px);
+}
+
+/* CARD FOOTER */
+.card-footer {
+    border-top: 1px solid rgba(25, 167, 255, 0.08);
+    padding-top: 20px;
+}
+
+.card-footer p {
+    font-size: 12px;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 0;
+}
+
+.card-footer i {
+    color: var(--primary);
+}
+
+/* ANIMATIONS */
+@keyframes slideUpFade {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .error-container {
+        padding: 40px 24px;
+    }
+    
+    .error-container h1 {
+        font-size: 80px;
+    }
+    
+    .error-container h2 {
+        font-size: 24px;
+    }
+    
+    .error-container p {
+        font-size: 14px;
+    }
+    
+    .actions {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .home-btn, .support-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}

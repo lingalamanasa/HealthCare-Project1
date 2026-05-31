@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly Healthcare | Smart Digital Medical Solutions</title>
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Stackly Healthcare offers advanced medical solutions, AI diagnostics, and expert patient care. Experience a healthier tomorrow with our digital healthcare systems.">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar" id="navbar">
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <h2>Stackly<span>Health</span></h2>
+        </div>
+
+        <nav class="nav-menu" id="navMenu">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#research">Research</a>
+            <a href="#doctors">Doctors</a>
+            <a href="#testimonials">Reviews</a>
+            <a href="#blogs">Blogs</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-buttons">
+            <a href="404error.html" class="login-btn">Login</a>
+            <a href="#contact" class="start-btn">Get Started</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="hero-tag">
+                <i class="fa-solid fa-sparkles"></i> Future of Smart Healthcare
+            </span>
+            <h1>
+                Advanced Healthcare <br>
+                For A Better
+                <span class="gradient-text">Tomorrow</span>
+            </h1>
+            <p>
+                Delivering innovative digital healthcare systems, AI-powered rapid diagnostics, highly experienced specialists, and personalized patient wellness programs for a healthier life.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="primary-btn">
+                    Book Appointment <i class="fa-solid fa-calendar-check"></i>
+                </a>
+                <a href="#services" class="secondary-btn">
+                    Explore Services <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="hero-ratings">
+                <div class="rating-avatars">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&q=80" alt="User">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="User">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="User">
+                </div>
+                <div class="rating-text">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span>Loved by <strong>10k+</strong> Patients globally</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <!-- Custom Premium Inline SVG Graphic -->
+            <svg viewBox="0 0 600 500" class="hero-svg" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="mainBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#19a7ff" />
+                        <stop offset="100%" stop-color="#0055ff" />
+                    </linearGradient>
+                    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#00f2fe" />
+                        <stop offset="100%" stop-color="#4facfe" />
+                    </linearGradient>
+                    <linearGradient id="bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#19a7ff" stop-opacity="0.15" />
+                        <stop offset="100%" stop-color="#0055ff" stop-opacity="0" />
+                    </linearGradient>
+                    <filter id="dropGlow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#19a7ff" flood-opacity="0.3"/>
+                    </filter>
+                </defs>
+                
+                <!-- Background Blob/Circle Gradients -->
+                <circle cx="300" cy="250" r="220" fill="url(#bgGlow)" />
+                <circle cx="150" cy="150" r="90" fill="#e8f5ff" opacity="0.6" />
+                <circle cx="480" cy="380" r="70" fill="#0055ff" opacity="0.05" />
+
+                <!-- Grid pattern background for high tech look -->
+                <g opacity="0.15">
+                    <line x1="100" y1="50" x2="100" y2="450" stroke="#19a7ff" stroke-width="1" stroke-dasharray="5 5" />
+                    <line x1="200" y1="50" x2="200" y2="450" stroke="#19a7ff" stroke-width="1" stroke-dasharray="5 5" />
+                    <line x1="300" y1="50" x2="300" y2="450" stroke="#19a7ff" stroke-width="1" stroke-dasharray="5 5" />
+                    <line x1="400" y1="50" x2="400" y2="450" stroke="#19a7ff" stroke-width="1" stroke-dasharray="5 5" />
+                    <line x1="500" y1="50" x2="500" y2="450" stroke="#19a7ff" stroke-width="1" stroke-dasharray="5 5" />
+                    
+                    <line x1="50" y1="100" x2="550" y2="100" stroke="#19a7ff" stroke-width="1" stroke-dasharray="5 5" />
+                    <line x1="50" y1="200" x2="550" y2="200" stroke="#19a7ff" stroke-width="1" stroke-dasharray="5 5" />
+                    <line x1="50" y1="300" x2="550" y2="300" stroke="#19a7ff" stroke-width="1" stroke-dasharray="5 5" />
+                    <line x1="50" y1="400" x2="550" y2="400" stroke="#19a7ff" stroke-width="1" stroke-dasharray="5 5" />
+                </g>
+
+                <!-- DNA Helix Graphic (Vector) -->
+                <g stroke="#19a7ff" stroke-width="2" opacity="0.3" transform="translate(80, 80)">
+                    <path d="M 0 50 Q 25 0, 50 50 T 100 50 T 150 50" fill="none" />
+                    <path d="M 0 50 Q 25 100, 50 50 T 100 50 T 150 50" fill="none" />
+                    <line x1="12" y1="30" x2="12" y2="70" />
+                    <line x1="37" y1="35" x2="37" y2="65" />
+                    <line x1="62" y1="30" x2="62" y2="70" />
+                    <line x1="87" y1="35" x2="87" y2="65" />
+                    <line x1="112" y1="30" x2="112" y2="70" />
+                    <line x1="137" y1="35" x2="137" y2="65" />
+                </g>
+
+                <!-- Heartbeat wave animation container -->
+                <g class="pulse-wave">
+                    <path d="M 50 250 H 180 L 200 150 L 220 350 L 245 220 L 260 270 L 280 250 H 550" 
+                          fill="none" stroke="url(#tealGrad)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"
+                          filter="url(#dropGlow)" />
+                </g>
+
+                <!-- Floating Medical cross symbols -->
+                <g fill="#19a7ff" opacity="0.7" class="float-element" transform="translate(480, 100)">
+                    <rect x="0" y="10" width="30" height="10" rx="3" />
+                    <rect x="10" y="0" width="10" height="30" rx="3" />
+                </g>
+                <g fill="#00f2fe" opacity="0.6" class="float-element" transform="translate(100, 360) scale(0.7)">
+                    <rect x="0" y="10" width="30" height="10" rx="3" />
+                    <rect x="10" y="0" width="10" height="30" rx="3" />
+                </g>
+
+                <!-- UI Mockup Window -->
+                <g transform="translate(250, 120)" filter="url(#dropGlow)">
+                    <!-- Window Frame -->
+                    <rect x="0" y="0" width="280" height="230" rx="20" fill="#ffffff" />
+                    <rect x="0" y="0" width="280" height="40" rx="20" fill="#f0f5fc" />
+                    <!-- Mock Browser Dots -->
+                    <circle cx="20" cy="20" r="6" fill="#ff5f56" />
+                    <circle cx="40" cy="20" r="6" fill="#ffbd2e" />
+                    <circle cx="60" cy="20" r="6" fill="#27c93f" />
+                    
+                    <!-- Content Inside Mock UI -->
+                    <rect x="20" y="60" width="100" height="20" rx="5" fill="#19a7ff" opacity="0.1" />
+                    <rect x="25" y="66" width="60" height="8" rx="4" fill="#19a7ff" />
+                    
+                    <rect x="20" y="95" width="240" height="12" rx="4" fill="#e2edf7" />
+                    <rect x="20" y="115" width="200" height="12" rx="4" fill="#e2edf7" />
+                    <rect x="20" y="135" width="220" height="12" rx="4" fill="#e2edf7" />
+
+                    <!-- Mini Doctor Avatar in Graphic -->
+                    <g transform="translate(20, 160)">
+                        <circle cx="25" cy="25" r="25" fill="#0055ff" opacity="0.1" />
+                        <!-- Minimal Avatar Head/Shoulders -->
+                        <circle cx="25" cy="18" r="8" fill="#0055ff" />
+                        <path d="M 10 38 Q 25 28, 40 38 Z" fill="#0055ff" />
+                        <!-- Bio details -->
+                        <rect x="65" y="10" width="120" height="12" rx="4" fill="#19a7ff" />
+                        <rect x="65" y="28" width="80" height="10" rx="4" fill="#a0c5eb" />
+                    </g>
+                </g>
+
+                <!-- Floating Heart Rate Pulse Circle -->
+                <circle cx="200" cy="150" r="12" fill="#00f2fe" filter="url(#dropGlow)" class="pulse-dot" />
+                <circle cx="220" cy="350" r="8" fill="#19a7ff" class="pulse-dot" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section class="about" id="about">
+        <div class="about-image">
+            <!-- Custom Premium Inline SVG Graphic for About Us -->
+            <svg viewBox="0 0 600 500" class="about-svg" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#19a7ff" />
+                        <stop offset="100%" stop-color="#4facfe" />
+                    </linearGradient>
+                    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+                        <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.1"/>
+                    </filter>
+                </defs>
+
+                <!-- Background Abstract Elements -->
+                <rect x="50" y="50" width="480" height="380" rx="40" fill="#ffffff" filter="url(#shadow)" />
+                <circle cx="500" cy="100" r="40" fill="#e8f5ff" />
+                <circle cx="100" cy="400" r="60" fill="#e8f5ff" />
+
+                <!-- Hospital Building Vector Layout -->
+                <g transform="translate(120, 100)">
+                    <!-- Grid Lines of Hospital -->
+                    <rect x="20" y="100" width="320" height="200" rx="10" fill="#f0f5fc" />
+                    <rect x="120" y="40" width="120" height="260" rx="15" fill="#ffffff" filter="url(#shadow)" />
+                    <!-- Red Cross Badge -->
+                    <circle cx="180" cy="90" r="28" fill="#ff4f79" opacity="0.1" />
+                    <g fill="#ff4f79" transform="translate(168, 78)">
+                        <rect x="0" y="9" width="24" height="6" rx="2" />
+                        <rect x="9" y="0" width="6" height="24" rx="2" />
+                    </g>
+                    <!-- Windows -->
+                    <rect x="140" y="140" width="30" height="30" rx="5" fill="#e1e8ed" />
+                    <rect x="190" y="140" width="30" height="30" rx="5" fill="#e1e8ed" />
+                    <rect x="140" y="190" width="30" height="30" rx="5" fill="#e1e8ed" />
+                    <rect x="190" y="190" width="30" height="30" rx="5" fill="#e1e8ed" />
+                    
+                    <rect x="50" y="140" width="40" height="30" rx="5" fill="#19a7ff" opacity="0.15" />
+                    <rect x="50" y="190" width="40" height="30" rx="5" fill="#19a7ff" opacity="0.15" />
+                    <rect x="270" y="140" width="40" height="30" rx="5" fill="#19a7ff" opacity="0.15" />
+                    <rect x="270" y="190" width="40" height="30" rx="5" fill="#19a7ff" opacity="0.15" />
+                    <!-- Double Doors -->
+                    <rect x="155" y="250" width="50" height="50" rx="5" fill="#1b2b4b" />
+                    <line x1="180" y1="250" x2="180" y2="300" stroke="#ffffff" stroke-width="2" />
+                </g>
+
+                <!-- Tech Nodes overlay -->
+                <g stroke="#19a7ff" stroke-width="2" opacity="0.8">
+                    <line x1="450" y1="120" x2="480" y2="180" />
+                    <line x1="480" y1="180" x2="420" y2="240" />
+                    <line x1="420" y1="240" x2="490" y2="300" />
+                    <circle cx="450" cy="120" r="6" fill="#19a7ff" />
+                    <circle cx="480" cy="180" r="6" fill="#0055ff" />
+                    <circle cx="420" cy="240" r="6" fill="#00f2fe" />
+                    <circle cx="490" cy="300" r="8" fill="#19a7ff" />
+                </g>
+
+                <!-- Dynamic Floating Card inside SVG -->
+                <g transform="translate(300, 320)" filter="url(#shadow)">
+                    <rect x="0" y="0" width="200" height="80" rx="15" fill="#ffffff" />
+                    <circle cx="35" cy="40" r="20" fill="#27c93f" opacity="0.15" />
+                    <!-- Checkmark -->
+                    <path d="M 27 40 L 32 45 L 43 34" fill="none" stroke="#27c93f" stroke-width="3" stroke-linecap="round" />
+                    <text x="70" y="38" font-family="'Poppins', sans-serif" font-weight="700" font-size="14" fill="#1b2b4b">Verified Care</text>
+                    <text x="70" y="55" font-family="'Poppins', sans-serif" font-size="11" fill="#666">JCI Certified Standards</text>
+                </g>
+            </svg>
+        </div>
+
+        <div class="about-content">
+            <span class="sub-title"><i class="fa-solid fa-user-doctor"></i> WHO WE ARE</span>
+            <h2>We Are Setting Standards in Modern Medical Care</h2>
+            <p>
+                Stackly Healthcare is a state-of-the-art medical framework dedicated to delivering seamless patient management. We bridge the gap between skilled clinical specialists and smart AI diagnostic procedures.
+            </p>
+            <p>
+                Whether you need immediate emergency treatments, deep scientific consultation, or long-term chronic management, we ensure you receive top-quality hospital treatment combined with modern conveniences.
+            </p>
+
+            <div class="feature-grid">
+                <div class="feature-box">
+                    <div class="feature-icon"><i class="fa-solid fa-circle-check"></i></div>
+                    <div class="feature-text">
+                        <h4>Smart Medical Systems</h4>
+                        <p>Fully electronic secure medical archives.</p>
+                    </div>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon"><i class="fa-solid fa-circle-check"></i></div>
+                    <div class="feature-text">
+                        <h4>Expert Specialists</h4>
+                        <p>Access to board-certified medical doctors.</p>
+                    </div>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon"><i class="fa-solid fa-circle-check"></i></div>
+                    <div class="feature-text">
+                        <h4>AI Diagnostics</h4>
+                        <p>Rapid computer-aided medical analysis.</p>
+                    </div>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon"><i class="fa-solid fa-circle-check"></i></div>
+                    <div class="feature-text">
+                        <h4>24/7 Support</h4>
+                        <p>Emergency hotlines open at any hour.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-cta">
+                <a href="#about" class="primary-btn">Read Our Story</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SERVICES SECTION ================= -->
+    <section class="services" id="services">
+        <div class="section-title">
+            <span class="sub-title"><i class="fa-solid fa-kit-medical"></i> CLINICAL DEPARTMENTS</span>
+            <h2>Our Specialized Medical Services</h2>
+            <p>We provide full clinical capabilities, incorporating advanced laboratory research and modern equipment.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=700&q=80" alt="Emergency">
+                    <div class="service-tag emergency">24/7 Urgent</div>
+                </div>
+                <div class="service-content">
+                    <div class="service-icon"><i class="fa-solid fa-truck-medical"></i></div>
+                    <h3>Emergency Care</h3>
+                    <p>Rapid-response critical treatment unit equipped with top-tier life support mechanisms.</p>
+                    <a href="#contact" class="service-link">Consult Now <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=700&q=80" alt="Research">
+                    <div class="service-tag research">Innovative</div>
+                </div>
+                <div class="service-content">
+                    <div class="service-icon"><i class="fa-solid fa-microscope"></i></div>
+                    <h3>Medical Research</h3>
+                    <p>Pioneering clinical studies, pharmaceutical trials, and genomic testing frameworks.</p>
+                    <a href="#research" class="service-link">View Research <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=700&q=80" alt="Doctors">
+                    <div class="service-tag specialists">Board Certified</div>
+                </div>
+                <div class="service-content">
+                    <div class="service-icon"><i class="fa-solid fa-user-doctor"></i></div>
+                    <h3>Expert Specialists</h3>
+                    <p>Direct appointments with specialized doctors and practitioners representing key disciplines.</p>
+                    <a href="#doctors" class="service-link">Find Doctors <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1580281657527-47c1f9f75f0c?w=700&q=80" alt="Cardiology">
+                    <div class="service-tag cardio">Advanced Care</div>
+                </div>
+                <div class="service-content">
+                    <div class="service-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                    <h3>Cardiology</h3>
+                    <p>Comprehensive cardiovascular diagnosis, bypass consultation, and regular heart monitoring.</p>
+                    <a href="#contact" class="service-link">Consult Now <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?w=700&q=80" alt="Dental">
+                    <div class="service-tag dental">Cosmetic & Surgical</div>
+                </div>
+                <div class="service-content">
+                    <div class="service-icon"><i class="fa-solid fa-tooth"></i></div>
+                    <h3>Dental Care</h3>
+                    <p>Modern microscopic root canal therapy, orthodontics, implants, and laser treatments.</p>
+                    <a href="#contact" class="service-link">Consult Now <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=700&q=80" alt="Pediatrics">
+                    <div class="service-tag pediatrics">Child Friendly</div>
+                </div>
+                <div class="service-content">
+                    <div class="service-icon"><i class="fa-solid fa-baby"></i></div>
+                    <h3>Pediatrics</h3>
+                    <p>Dedicated medical care, routine vaccines, growth tracking, and health education for children.</p>
+                    <a href="#contact" class="service-link">Consult Now <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= STATISTICS SECTION ================= -->
+    <section class="stats">
+        <div class="stats-wrapper">
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-user-doctor"></i></div>
+                <h2 data-target="120">120+</h2>
+                <p>Expert Doctors</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-face-smile"></i></div>
+                <h2 data-target="5000">5000+</h2>
+                <p>Happy Patients</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-hospital"></i></div>
+                <h2 data-target="35">35+</h2>
+                <p>Departments</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+                <h2 data-target="15">15+</h2>
+                <p>Years Experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= RESEARCH SECTION ================= -->
+    <section class="research" id="research">
+        <div class="section-title">
+            <span class="sub-title"><i class="fa-solid fa-flask"></i> SCIENTIFIC VENTURES</span>
+            <h2>Pioneering Medical Research</h2>
+            <p>Our research facility works in collaboration with leading global universities to study complex ailments.</p>
+        </div>
+
+        <div class="research-grid">
+            <div class="research-card">
+                <div class="research-num">01</div>
+                <h3>AI-Powered Diagnostics</h3>
+                <p>Developing machine learning algorithms to evaluate magnetic resonance imaging (MRI) and CT scan records in minutes, boosting accuracy and speed.</p>
+                <div class="research-footer">
+                    <span class="badge">In-Progress</span>
+                    <a href="404error.html"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </div>
+
+            <div class="research-card">
+                <div class="research-num">02</div>
+                <h3>Genomic Therapeutics</h3>
+                <p>Exploring cellular treatments and gene alteration parameters targeting early cancer cells and autoimmune anomalies to define personalized cures.</p>
+                <div class="research-footer">
+                    <span class="badge completed">Completed</span>
+                    <a href="404error.html"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </div>
+
+            <div class="research-card">
+                <div class="research-num">03</div>
+                <h3>Robotic Surgery Precision</h3>
+                <p>Improving surgical robotics with force-feedback sensory arrays, allowing surgeons to operate with precision during delicate cardiovascular surgeries.</p>
+                <div class="research-footer">
+                    <span class="badge">In-Progress</span>
+                    <a href="404error.html"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= DOCTORS SECTION ================= -->
+    <section class="doctors" id="doctors">
+        <div class="section-title">
+            <span class="sub-title"><i class="fa-solid fa-user-group"></i> OUR TEAM</span>
+            <h2>Meet Our Expert Specialists</h2>
+            <p>Highly qualified, board-certified medical professionals committed to your wellness journeys.</p>
+        </div>
+
+        <div class="doctor-grid">
+            <div class="doctor-card">
+                <div class="doc-img-container">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=500&q=80" alt="Dr. Sarah Jenkins">
+                    <div class="doc-overlay">
+                        <div class="doc-social">
+                            <a href="404error.html"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="404error.html"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="404error.html"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="doc-info">
+                    <h3>Dr. Sarah Jenkins</h3>
+                    <p class="doc-specialty">Cardiologist</p>
+                    <span class="doc-badge"><i class="fa-solid fa-graduation-cap"></i> Harvard Medical School</span>
+                </div>
+            </div>
+
+            <div class="doctor-card">
+                <div class="doc-img-container">
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=500&q=80" alt="Dr. Michael Chen">
+                    <div class="doc-overlay">
+                        <div class="doc-social">
+                            <a href="404error.html"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="404error.html"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="404error.html"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="doc-info">
+                    <h3>Dr. Michael Chen</h3>
+                    <p class="doc-specialty">Neurologist</p>
+                    <span class="doc-badge"><i class="fa-solid fa-graduation-cap"></i> Johns Hopkins University</span>
+                </div>
+            </div>
+
+            <div class="doctor-card">
+                <div class="doc-img-container">
+                    <img src="https://images.unsplash.com/photo-1594824813573-246434de83fb?w=500&q=80" alt="Dr. Emily Rodriguez">
+                    <div class="doc-overlay">
+                        <div class="doc-social">
+                            <a href="404error.html"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="404error.html"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="404error.html"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="doc-info">
+                    <h3>Dr. Emily Rodriguez</h3>
+                    <p class="doc-specialty">Pediatrician</p>
+                    <span class="doc-badge"><i class="fa-solid fa-graduation-cap"></i> Stanford Medicine</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS SECTION ================= -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-title">
+            <span class="sub-title"><i class="fa-solid fa-comments"></i> PATIENT FEEDBACK</span>
+            <h2>What Our Patients Say</h2>
+            <p>Read true medical success reviews from the clients who trusted Stackly Healthcare.</p>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                <p>"The AI-powered diagnostics system is extremely efficient. I had my screening reports back in minutes! Dr. Sarah Jenkins described the results in complete detail. Highly recommended healthcare."</p>
+                <div class="testi-user">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&q=80" alt="Client Portrait">
+                    <div class="user-info">
+                        <h4>Amanda Lawson</h4>
+                        <span>Cardio Patient</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                <p>"Stackly Healthcare completely transformed how I track my physical state. The online platform simplifies appointment scheduling and provides direct contact with expert specialists in seconds."</p>
+                <div class="testi-user">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Client Portrait">
+                    <div class="user-info">
+                        <h4>Marcus Vance</h4>
+                        <span>Regular Checkup</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                <p>"The pediatric team is wonderful! They made my child feel comfortable throughout the medical diagnostics. The child-friendly spaces and compassionate doctors are truly world-class."</p>
+                <div class="testi-user">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Client Portrait">
+                    <div class="user-info">
+                        <h4>Jessica K.</h4>
+                        <span>Mother of Pediatric Patient</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= BLOGS SECTION ================= -->
+    <section class="blogs" id="blogs">
+        <div class="section-title">
+            <span class="sub-title"><i class="fa-solid fa-square-rss"></i> MEDICAL INSIGHTS</span>
+            <h2>Latest Health News & Blogs</h2>
+            <p>Keep updated with medical tips and breakthroughs curated by our clinical specialists.</p>
+        </div>
+
+        <div class="blog-grid">
+            <article class="blog-card">
+                <div class="blog-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=500&q=80" alt="Future of AI in Medicine">
+                    <span class="blog-category">Technology</span>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span><i class="fa-solid fa-calendar-days"></i> May 28, 2026</span>
+                        <span><i class="fa-solid fa-user"></i> Editorial Staff</span>
+                    </div>
+                    <h3>How AI is Redefining Quick Diagnostic Screenings</h3>
+                    <p>Explore the role of smart computing in early cancer detection and magnetic resonance evaluations...</p>
+                    <a href="404error.html" class="read-more">Read Full Article <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=500&q=80" alt="Wellness and Yoga">
+                    <span class="blog-category">Wellness</span>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span><i class="fa-solid fa-calendar-days"></i> May 24, 2026</span>
+                        <span><i class="fa-solid fa-user"></i> Dr. Emily Rodriguez</span>
+                    </div>
+                    <h3>Daily Habits to Prevent Chronic Cardiovascular Diseases</h3>
+                    <p>Simple aerobic exercises, nutritional changes, and regular sleep cycles to maintain a healthy heartbeat...</p>
+                    <a href="404error.html" class="read-more">Read Full Article <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=500&q=80" alt="Smart Patient Care">
+                    <span class="blog-category">Clinical Care</span>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span><i class="fa-solid fa-calendar-days"></i> May 20, 2026</span>
+                        <span><i class="fa-solid fa-user"></i> Dr. Michael Chen</span>
+                    </div>
+                    <h3>The Evolution of Interactive Robotic Operations</h3>
+                    <p>Understanding precision feedback and how digital instruments minimize patient recovery times...</p>
+                    <a href="404error.html" class="read-more">Read Full Article <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-info-panel">
+                <span class="sub-title light"><i class="fa-solid fa-headset"></i> GET IN TOUCH</span>
+                <h2>Let's Discuss Your Health Management Plans</h2>
+                <p>Have questions about appointment booking, pricing, or specialized hospital departments? Fill in the details to speak with a coordinator.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-detail-item">
+                        <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="text">
+                            <h4>Hospital Location</h4>
+                            <p>128 Healthcare Ave, Suite 300, New York, NY 10001</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail-item">
+                        <div class="icon"><i class="fa-solid fa-phone-volume"></i></div>
+                        <div class="text">
+                            <h4>24/7 Hotline</h4>
+                            <p>+1 (555) 902-8800 / +1 (555) 902-8811</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail-item">
+                        <div class="icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+                        <div class="text">
+                            <h4>Email Enquiries</h4>
+                            <p>support@stacklyhealth.com / admissions@stacklyhealth.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="emergency-notice">
+                    <i class="fa-solid fa-circle-exclamation animate-pulse"></i>
+                    <div>
+                        <strong>Immediate Emergency?</strong>
+                        <p>Call 911 or visit our primary trauma unit immediately.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-panel">
+                <form id="contactForm" onsubmit="event.preventDefault(); alert('Thank you! Your appointment request has been received.');">
+                    <h3>Request an Appointment</h3>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="+1 (555) 000-0000" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="department">Select Department</label>
+                            <select id="department" required>
+                                <option value="" disabled selected>Choose Specialty</option>
+                                <option value="cardiology">Cardiology</option>
+                                <option value="pediatrics">Pediatrics</option>
+                                <option value="dental">Dental Care</option>
+                                <option value="neurology">Neurology</option>
+                                <option value="general">General Checkup</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Medical Description / Message</label>
+                        <textarea id="message" placeholder="Please briefly explain your symptoms or reason for visit..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Request <i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-col brand">
+                <div class="logo">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <h2>Stackly<span>Health</span></h2>
+                </div>
+                <p>Leading the next generation of smart clinical services, combining AI analytics with human care to ensure a safer, healthier tomorrow.</p>
+                <div class="social-icons">
+                    <a href="404error.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="404error.html" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="404error.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="404error.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col Links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#research">Research Ventures</a></li>
+                    <li><a href="#doctors">Expert Team</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col Services">
+                <h3>Our Departments</h3>
+                <ul>
+                    <li><a href="#services">Emergency Care</a></li>
+                    <li><a href="#services">Cardiology Services</a></li>
+                    <li><a href="#services">Micro Dental Care</a></li>
+                    <li><a href="#services">Pediatrics Division</a></li>
+                    <li><a href="#services">Neurology Research</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col Newsletter">
+                <h3>Newsletter</h3>
+                <p>Subscribe to receive health advice and medical updates weekly.</p>
+                <form class="subscribe-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-envelope"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Stackly Healthcare. All rights reserved. Designed for excellence.</p>
+        </div>
+    </footer>
+
+    <!-- Simple Scroll and Mobile Menu Script -->
+    <script>
+        // Toggle mobile menu
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const icon = menuToggle.querySelector('i');
+            if (navMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close mobile menu on clicking link
+        const navLinks = document.querySelectorAll('.nav-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+                
+                // Set active link highlight
+                navLinks.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+            });
+        });
+
+        // Change navbar styling on scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
